@@ -1,0 +1,25 @@
+{
+  "id": "swade-cc-points",
+  "title": "SWADE Character Creation Points",
+  "description": "Show character creation attribute & skill points in SWADE character sheets.",
+  "authors": [
+    {
+      "name": "Jeremy Glebe",
+      "email": "jeremyglebe@gmail.com"
+    }
+  ],
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "swade",
+        "type": "system"
+      }
+    ]
+  },
+  "esmodules": ["scripts/module.js"]
+}
