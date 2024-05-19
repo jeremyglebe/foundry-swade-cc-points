@@ -13,18 +13,7 @@ export default defineConfig({
       },
     },
   },
-  plugins: [
-    copy({
-      targets: [
-        { src: 'src/packs', dest: 'dist' },
-        { src: 'src/icons', dest: 'dist' },
-        { src: 'src/art', dest: 'dist' },
-        // { src: 'src/templates', dest: 'dist' },
-      ],
-      hook: 'writeBundle',
-    }),
-    updateModuleManifestPlugin(),
-  ],
+  plugins: [updateModuleManifestPlugin()],
 });
 
 function updateModuleManifestPlugin(): Plugin {
